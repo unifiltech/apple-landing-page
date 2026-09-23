@@ -1,0 +1,11 @@
+# Gabarito (resolução do exercício) — fica só na máquina do professor
+index-gabarito.html
+styles-gabarito.css
+
+# Arquivos gerados pelo sistema operacional
+.DS_Store
+Thumbs.db
+
+# Configurações de editor
+.vscode/
+.idea/
