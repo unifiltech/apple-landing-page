@@ -1,7 +1,6 @@
 /* ---------- Variáveis (cores e fontes) ---------- */
-:root {
+:root{
     --fonte-texto: "Inter", sans-serif;
-
     --cor-texto: #1d1d1f;
     --cor-texto-claro: #f5f5f7;
     --cor-fundo-claro: #f5f5f7;
@@ -21,18 +20,15 @@
     box-sizing: border-box;
 }
 
-body {
+body{
     font-family: var(--fonte-texto);
     font-size: 17px;
     line-height: 1.48;
     letter-spacing: -0.02em;
     color: var(--cor-texto);
-    background-color: #fff;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
 }
 
-img {
+img{
     display: block;
 }
 
@@ -41,14 +37,12 @@ main {
     margin: 0 auto;
 }
 
-/* ---------- Cabeçalho ---------- */
 .cabecalho {
     position: sticky;
     top: 0;
     z-index: 10;
     height: 44px;
-    background-color: rgba(255, 255, 255, 0.8);
-    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    background-color: rgba(255, 255, 255, .8);
     backdrop-filter: saturate(180%) blur(20px);
 }
 
@@ -58,11 +52,111 @@ main {
     padding: 0 22px;
 }
 
-.cabecalho-nav-lista {
+.cabecalho-nav-lista{
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 44px;
     margin: 0 -8px;
     list-style: none;
+}
+
+.cabecalho-nav-link {
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* MAIN */
+
+
+.section {
+    background-color: red;
+}
+
+.bloco {
+    background-color: gray;
+    min-height: 580px;
+    padding: 48px 0 48px;
+    background-color: var(--cor-fundo-claro);
+    overflow: hidden;
+    position: relative;
+}
+
+.bloco-escuro {
+    background-color: var(--cor-fundo-escuro);
+}
+
+.bloco-escuro {
+    color: var(--cor-texto-claro);
+    text-decoration: none;
+}
+
+.bloco-escuro .bloco-aviso {
+    color: var(--cor-aviso-escuro);
+}
+
+.bloco-titulo {
+    font-size: 56px;
+    font-weight: 600;
+}
+
+.bloco-subtitulo {
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.bloco-aviso {
+    font-size: 19px;
+    font-weight: 400;
+    color: var(--cor-aviso);
+}
+
+.botao {
+    min-width: 60px;
+    padding: 8px 15px;
+    border: 1px solid transparent;
+    background-color: var(--cor-azul);
+    border-radius: 980px;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.botao:hover {
+    background-color: var(--cor-azul-hover);
+}
+
+.botao-secundario {
+    background-color: transparent;
+    color: var(--cor-link);
+    border-color: var(--cor-link);
+}
+
+.botao-secundario:hover {
+    background-color: var(--cor-azul-hover);
+    color: white;
+}
+
+.bloco-imagem {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.bloco-conteudo {
+    z-index: 2;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bloco-botoes {
+    margin-top: 16px;
 }
